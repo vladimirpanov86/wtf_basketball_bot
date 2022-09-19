@@ -6,11 +6,10 @@ import { addPlayer, removePlayer, printPlayers, removeListPlayers } from './requ
 
 dotenv.config();
 cronJob.schedule('0 0 * * Wed', function () {
-  console.log(`every Wednesday`)
   removeListPlayers();
 });
 
-const bot = new Telegraf(process.env.botToken);
+const bot = new Telegraf('5198029571:AAEXF59pAFrl7OS_eTabNb9uct7_mXkZVyI');
 
 export let players = [];
 
